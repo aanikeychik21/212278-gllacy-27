@@ -1,6 +1,6 @@
 # Личный проект «Глейси»
 
-* Студент: [Анастасия Аникейчик](https://up.htmlacademy.ru/htmlcss/27/user/212278).
+* Студент: [Анастасия Аникейчик](https://htmlacademy.ru/profile/id212278).
 * Наставник: [Артём Рудов] (https://htmlacademy.ru/profile/artrudov).
 
 ---
