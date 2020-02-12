@@ -86,20 +86,81 @@
     <h1> Сливочное мороженое </h1>
     <section>
       <h2>Сортировка мороженого</h2>
-      <!-- Здесь будет форма -->
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset>
+          <label for="sorting"> Сортировка</label>
+          <select multiple name="sorting" id="sorting">
+            <option value="по популярности" selected>по популярности</option>
+            <option value="сначала недорогие">сначала недорогие</option>
+            <option value="сначала дорогие">сначала дорогие</option>
+            <option value="по жирности">по жирности</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="price">Цена: 100 руб. – 500 руб.</label>
+          <input type="range" name="price" id="price" max="500" min="100" step='100' value="250">
+        </fieldset>
+        <fieldset>
+          <legend>Жирность:</legend>
+          <ul>
+            <li>
+              <label for="fat-free">0%</label>
+              <input type="radio" value="0%" name="richness" id="fat-free">
+            </li>
+            <li>
+              <label for="fat-low">до 10%</label>
+              <input type="radio" value="до 10%" name="richness" id="fat-low" checked>
+            </li>
+            <li>
+              <label for="fat-medium">до 30%</label>
+              <input type="radio" value="до 30%" name="richness" id="fat-medium">
+            </li>
+            <li>
+              <label for="fat-high">выше 30%</label>
+              <input type="radio" value="выше 30%" name="richness" id="fat-high">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <ul>
+            <li>
+              <label for="chocolate">шоколадные</label>
+              <input type="checkbox" name="chocolate" id="chocolate" checked>
+            </li>
+            <li>
+              <label for="sugar-sprinkles">сахарные присыпки</label>
+              <input type="checkbox" name="sugar-sprinkles" id="sugar-sprinkles" checked>
+            </li>
+            <li>
+              <label for="fruits">фрукты</label>
+              <input type="checkbox" name="fruits" id="fruits">
+            </li>
+            <li>
+              <label for="syrup">сиропы</label>
+              <input type="checkbox" name="syrup" id="syrup">
+            </li>
+            <li>
+              <label for="jams">джемы</label>
+              <input type="checkbox" name="jams" id="jams">
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Применить</button>
+      </form>
     </section>
   </header>
   <main>
     <ul>
       <li>
         <h3>
-          <a href="#">
+          <a href=" #">
             Сливочное с апельсиновым джемом и цитрусовой стружкой
           </a>
         </h3>
         <p>
           <a href="#">
-            <img src="img/ice-cream-orange.jpg" width="267" height="267" 
+            <img src="img/ice-cream-orange.jpg" width="267" height="267"
               alt="Сливочное с апелисиновым джемом и цитрусовой стружкой">
           </a>
         </p>
@@ -115,8 +176,7 @@
         </h3>
         <p>
           <a href="#">
-            <img src="img/ice-cream-coffee.jpg" width="267" height="267" 
-              alt="Сливочно-кофейное с кусочками шоколада">
+            <img src="img/ice-cream-coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           </a>
         </p>
         <p>
@@ -131,7 +191,7 @@
         </h3>
         <p>
           <a href="#">
-            <img src="img/ice-cream-strawberry.jpg" width="267" height="267" 
+            <img src="img/ice-cream-strawberry.jpg" width="267" height="267"
               alt="Сливочно-клубничное с присыпкой из белого шоколада">
           </a>
         </p>
@@ -147,7 +207,7 @@
         </h3>
         <p>
           <a href="#">
-            <img src="img/ice-cream-caramel.jpg" width="267" height="267" 
+            <img src="img/ice-cream-caramel.jpg" width="267" height="267"
               alt="Сливочное крем-брюле с карамельной подливкой">
           </a>
         </p>
@@ -163,7 +223,7 @@
         </h3>
         <p>
           <a href="#">
-            <img src="img/ice-cream-cowberry.jpg" width="267" height="267"  alt="Сливочное с брусничным джемом">
+            <img src="img/ice-cream-cowberry.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
           </a>
         </p>
         <p>
@@ -178,7 +238,7 @@
         </h3>
         <p>
           <a href="#">
-            <img src="img/ice-cream-blueberry.jpg" width="267" height="267" 
+            <img src="img/ice-cream-blueberry.jpg" width="267" height="267"
               alt="Сливочно-черничное с цельными ягодами черники">
           </a>
         </p>
@@ -194,8 +254,7 @@
         </h3>
         <p>
           <a href="#">
-            <img src="img/ice-cream-lemon.jpg" width="267" height="267" 
-              alt="Сливочно-лимонное с карамельной присыпкой">
+            <img src="img/ice-cream-lemon.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
           </a>
         </p>
         <p>
@@ -225,8 +284,7 @@
         </h3>
         <p>
           <a href="#">
-            <img src="img/ice-cream-vanila.jpg" width="267" height="267" 
-              alt="Сливочно-ванильное с кусочками шоколада">
+            <img src="img/ice-cream-vanila.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
           </a>
         </p>
         <p>
@@ -241,7 +299,7 @@
         </h3>
         <p>
           <a href="#">
-            <img src="img/ice-cream-menthol.jpg" width="267" height="267"  alt="Сливочноe с ментоловым сиропом">
+            <img src="img/ice-cream-menthol.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
           </a>
         </p>
         <p>
@@ -256,7 +314,7 @@
         </h3>
         <p>
           <a href="#">
-            <img src="img/ice-cream-black-chocolate.jpg" width="267" height="267" 
+            <img src="img/ice-cream-black-chocolate.jpg" width="267" height="267"
               alt="Сливочное с кусочками черного шоколада">
           </a>
         </p>
@@ -272,7 +330,7 @@
         </h3>
         <p>
           <a href="#">
-            <img src="img/ice-cream-mint.jpg" width="267" height="267"  alt="Сливочное с мятным сиропом">
+            <img src="img/ice-cream-mint.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
           </a>
         </p>
         <p>
