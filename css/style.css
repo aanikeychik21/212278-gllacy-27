@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.38;
+    font-weight: 400;
+    color: #ffffff;
+    background-color:#849d8f;
+  }
+  a {
+    text-decoration: none;
+  }  
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  .list {
+    list-style: none;
+  }
+  .button {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+    color: #ffffff;
+    box-shadow: 0px 2px 2px 0 var(--deep-red-64);
+    background-image: linear-gradient(to top, #e74a35, #f26843);
+    border: none;
+  }
+.site-navigation {
+    font-size: 16px;
+    line-height: 1.13;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .nav-catalog {
+    display: none;
+  }
+.user-navigation {
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+    color: #ffffff;
+  }
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+}
+.user-navigation a:hover,
+.user-navigation a:focus {
+  font-size: 14px;
+  font-weight: 500;
+  color: #323232;
+}
+.user-navigation form {
+  display: none;
+}
+
+.advantages {
+  text-align: left;
+  color: #323232;
+  background-image: url(../img/wafer.jpg);
+  background-repeat: repeat-x;
+  width: 1146px;
+  height: 306px;
+  object-fit: contain;
+  border-radius: 15px;
+  background-color: #849d8f;
+}
+.advantages p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: left;
+  color: #323232;
+}
+.advantages-item {
+  text-align: left;
+  color: #323232;
+}
+.strawberry {
+  background-image: url(../img/strawberry.png);
+  width: 560px;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 15px;
+  background-color: #849d8f;
+}
+.strawberry h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  text-align: left;
+  color: #323232;
+}
+.strawberry article {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: left;
+  text-decoration: underline;
+}
+.strawberry a {
+  color: #323232;
+}
+.strawberry a:hover,
+.strawberry a:focus,
+.strawberry a:active{
+  color: #ffbc9e;
+}
+.post {
+  color: #5a5a5a;
+  border-radius: 15px;
+  background-color: #f8f7f4;
+  width: 560px;
+  height: 220px;
+  background-image: url(../img/bg-post.svg);
+}
+.post input {
+  line-height: 1.5;
+  color: #999999;
+  width: 368px;
+  height: 44px;
+  border-radius: 5px;
+  border: solid 1px var(--greyish-52);
+  background-color: #ffffff;
+}
+.feedback {
+  display: none;
+}
+.footer-info a{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: underline;
+}
+.footer-info a:hover,
+.footer-info a:focus,
+.footer-info a:active{
+  color: #ffbc9e;
+}
+.html-academy {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: #fefefe;
+}
+.html-academy a{
+  text-decoration: underline;
+  color: #fefefe;
+}
+.html-academy a:hover,
+.html-academy a:focus,
+.html-academy a:active {
+  color: #ffbc9e;
+}
+.cart-items {
+  display: none;
+}
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 1.14;
+}
+.breadcrumbs a{
+  text-decoration: underline;
+  color: #ffffff;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+}
+.product-name a{
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: underline;
+}
+.product-name a:hover,
+.product-name a:focus,
+.product-name a:active {
+  color: #ffbc9e;
+}
+.price {
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+}
+.price span {
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffffff;
+}

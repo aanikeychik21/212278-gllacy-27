@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,9 +15,9 @@
       <p>
         <img src="https://via.placeholder.com/150x100" width="#" height="#" alt="Логотип интернет-магазина мороженого">
       </p>
-      <ul>
+      <ul class="site-navigation list">
         <li><a href="catalog.html">Каталог</a></li>
-        <ul>
+        <ul class="list nav-catalog">
           <li><a href="#">Новинки</a></li>
           <li><a href="catalog.html">Сливочное</a></li>
           <li><a href="#">Щербеты</a></li>
@@ -24,20 +27,20 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
-      <ul>
+      <ul class="user-navigation list">
         <li>
-          <button type="button">Поиск</button>
+          <a href="#">Поиск</a>
           <form method="post" action="https://echo.htmlacademy.ru">
-            <label for="search">Поиск</label>
+            <label for="search" class="visually-hidden">Поиск</label>
             <input type="search" name="search" id="search" placeholder="Крем-брюле">
           </form>
         </li>
         <li>
-          <button type="button">Вход</button>
-          <form method="post" action="https://echo.htmlacademy.ru">
-            <label for="email">Электронная почта</label>
+          <a href="#">Вход</a>
+          <form method="post" action="https://echo.htmlacademy.ru" >
+            <label for="email" class="visually-hidden">Электронная почта</label>
             <input type="text" name="login" id="email" placeholder="email@example.com">
-            <label for="password">Пароль</label>
+            <label for="password" class="visually-hidden">Пароль</label>
             <input type="password" name="password" id="password" placeholder="••••••••">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -49,16 +52,16 @@
         </li>
       </ul>
     </nav>
-    <p>
+    <p> 
       С 10 до 20, ежедневно
       <a href="tel:+78124502525">8 812 450-25-25</a>
     </p>
   </header>
   <main>
-    <h1>Магазин мороженого собственного производства "Gllacy"</h1>
+    <h1 class="visually-hidden">Магазин мороженого собственного производства "Gllacy"</h1>
     <section>
       <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-      <article>
+      <article> 
         <h3>Малинка даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
         <button><a href="#">Хочу варенье!</a></button>
@@ -137,11 +140,11 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="advantages">
       <p>
         Магазин Глэйси - это онлайн- и офлайн- магазини по продаже мороженого собственного производства на развес
       </p>
-      <ul>
+      <ul class="list advantages-item">
         <li>
           Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
           проверенных временем технологий.
@@ -160,35 +163,38 @@
         </li>
       </ul>
     </section>
-    <div>
+    <div class="strawberry">
       <h3> Новое в нашем блоге </h3>
       <article><a href="#"> 10 способов сервировки фруктовых щербетов к столу </a> </article>
     </div>
-    <div>
-      <p>Подпишись на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
-        спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <!--Здесь будет форма-->
+    <div class="post">
+      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <label for="email" class="visually-hidden">Электронная почта</label>
+            <input type="email" name="email" id="email" value="email@example.com">
+          <button type="submit" class="button">Отправить</button>
+        </form>
     </div>
     <img src="https://via.placeholder.com/150x100" width="#" height="#" alt="Карта с адресом магазина">
     <div>
       <p>Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-      <p>Для заказов по телефону: <a href="tel:+78124502525">8 812 450 25-25</a>(с 10 до 20 ежедневно)</p>
+      <p>Для заказов по телефону: <a href="tel:+78124502525">8 812 450-25-25</a>(с 10 до 20 ежедневно)</p>
       <button> Форма обратной связи </button>
     </div>
-    <section>
-      <h2>Форма обратной связи</h2>
+    <section class="feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <p>Мы обязательно вам ответим!</p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label for="feedback-name">Имя и фамилия</label>
+          <label for="feedback-name" class="visually-hidden">Имя и фамилия</label>
           <input type="text" name="feedback-name" id="feedback-name" placeholder="Имя Фамилия">
         </p>
         <p>
-          <label for="feedback-email">Адрес электронной почты</label>
+          <label for="feedback-email" class="visually-hidden">Адрес электронной почты</label>
           <input type="text" name="feedback-email" id="feedback-email" placeholder="email@example.com">
         </p>
         <p>
-          <label for="feedback-text">Текст обращения</label>
+          <label for="feedback-text" class="visually-hidden">Текст обращения</label>
           <textarea name="feedback-text" id="feedback-text" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit">Отправить</button>
@@ -202,13 +208,13 @@
       <li><a href="#">Фейсбук</a></li>
       <li><a href="#">Вконтакте</a></li>
     </ul>
-    <ul>
+    <ul class="list footer-info">
       <li><a href="#">Для поставщиков</a></li>
       <li><a href="#">О производстве</a></li>
       <li><a href="#">Наши документы</a></li>
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
-    <p>
+    <p class="html-academy">
       <img src="https://via.placeholder.com/150x100" width="#" height="#" alt="Логотип html academy">
       Сделано в
       <a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a>
