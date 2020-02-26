@@ -35,6 +35,14 @@ a {
     border: none;
 }
 
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: left;
+    color: #ffffff;
+}
+
 .site-navigation {
     font-size: 16px;
     line-height: 1.13;
@@ -75,6 +83,94 @@ a {
 
 .user-navigation form {
     display: none;
+}
+
+.timetable {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: right;
+    color: #ffffff;
+}
+
+.timetable a {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.09;
+    text-align: right;
+    color: #ffffff;
+}
+
+.heading {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+}
+
+.raspberry h3 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: left;
+    color: #ffffff;
+}
+
+.raspberry p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.22;
+    text-align: left;
+    color: #ffffff;
+    background-image: url(../img/raspberry.jpg);
+    width: 560px;
+    height: 229px;
+    border-radius: 15px;
+    background-color: #849d8f;
+}
+
+.raspberry button {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.99;
+    box-shadow: 0px 2px 2px 0 var(--deep-red-64);
+    background-image: linear-gradient(to top, #e74a35, #f26843);
+}
+
+.chocolate h3 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    color: #ffffff;
+}
+
+.chocolate p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.22;
+    text-align: left;
+    color: #ffffff;
+    background-image: url(../img/chocolate.jpg);
+    background-repeat: repeat-x repeat-y;
+    width: 560px;
+    height: 229px;
+    border-radius: 15px;
+}
+
+.chocolate button {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.99;
+    box-shadow: 0px 2px 2px 0 var(--deep-red-64);
+    background-image: linear-gradient(to top, #e74a35, #f26843);
 }
 
 .advantages {
@@ -144,6 +240,42 @@ a {
     width: 560px;
     height: 220px;
     background-image: url(../img/bg-post.svg);
+}
+
+.map-info p {
+    font-size: 14px;
+    line-height: 1.43;
+    font-weight: 400;
+    text-align: left;
+    color: #323232;
+}
+
+.map-info span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+    text-align: left;
+    color: #323232;
+}
+
+.map-info a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.57;
+    text-align: left;
+    color: #323232;
+}
+
+.map-info button {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+    text-align: left;
+    color: #ffffff;
+    width: 252px;
+    height: 44px;
+    box-shadow: 0px 2px 2px 0 var(--deep-red-64);
+    background-image: linear-gradient(to top, #e74a35, #f26843);
 }
 
 .post input {
@@ -242,4 +374,63 @@ a {
     font-weight: 700;
     line-height: 1.5;
     color: #ffffff;
+}
+
+.sort-heading {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    text-align: left;
+    color: #ffffff;
+}
+
+.sorting {
+    font-weight: 500;
+    line-height: 1.13;
+    text-align: left;
+    color: #ffffff;
+}
+
+.sorting a:hover,
+.sorting a:focus {
+    color: #323232;
+}
+
+.sort-button {
+    font-weight: 500;
+    line-height: 1.13;
+    text-align: left;
+    color: #ffffff;
+    width: 144px;
+    height: 37px;
+    border: solid 2px #ffffff;
+    background-color: #ffffff;
+}
+
+.sort-button button:hover,
+.sort-button button:focus {
+    color: #323232;
+    width: 144px;
+    height: 37px;
+    background-color: #ffffff;
+}
+
+.sort-button button:active {
+    color: #323232;
+    width: 144px;
+    height: 36px;
+    box-shadow: inset 0px 2px 1px 0 #696969;
+    background-color: #ededed;
+}
+
+.page-number a {
+    font-weight: 500;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
+}
+
+.page-number a:active {
+    color: #000000;
 }
