@@ -7,7 +7,6 @@ body {
     line-height: 1.38;
     font-weight: 400;
     color: #ffffff;
-    background-color: #849d8f;
 }
 
 a {
@@ -27,13 +26,34 @@ a {
 }
 
 .button {
-    font-size: 18px;
+    padding: 11px 22px;
+    border-radius: 25px;
+    background-color: #ef6140;
+    background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     font-weight: 700;
-    line-height: 1.33;
     color: #ffffff;
-    box-shadow: 0px 2px 2px 0 var(--deep-red-64);
-    background-image: linear-gradient(to top, #e74a35, #f26843);
-    border: none;
+    font-size: 18px;
+    line-height: 24px;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button a {
+    color: #ffffff;
+}
+
+.button:hover,
+.button:focus {
+    background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
+}
+
+.button:active {
+    background-image: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px 0 rgba(172, 16, 0, 1);
+    color: #fceeec;
 }
 
 h1 {
@@ -53,7 +73,12 @@ h1 {
 }
 
 .nav-catalog {
-    display: none;
+    border-radius: 5px;
+    background-color: #f8f7f4;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .user-navigation {
@@ -131,17 +156,6 @@ h1 {
     background-color: #849d8f;
 }
 
-.raspberry button {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.33;
-    text-align: center;
-    color: #ffffff;
-    opacity: 0.99;
-    box-shadow: 0px 2px 2px 0 var(--deep-red-64);
-    background-image: linear-gradient(to top, #e74a35, #f26843);
-}
-
 .chocolate h3 {
     font-size: 35px;
     font-weight: 700;
@@ -163,27 +177,16 @@ h1 {
     border-radius: 15px;
 }
 
-.chocolate button {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.33;
-    text-align: center;
-    color: #ffffff;
-    opacity: 0.99;
-    box-shadow: 0px 2px 2px 0 var(--deep-red-64);
-    background-image: linear-gradient(to top, #e74a35, #f26843);
-}
-
 .advantages {
     text-align: left;
     color: #323232;
-    background-image: url(../img/wafer.jpg);
-    background-repeat: repeat-x;
+    background-color: #eddfc5;
+    background-image: url("../img/wafer.jpg");
+    background-color: white;
     width: 1146px;
     height: 306px;
     object-fit: contain;
     border-radius: 15px;
-    background-color: #849d8f;
 }
 
 .advantages p {
@@ -239,32 +242,7 @@ h1 {
     border-radius: 15px;
     background-color: #f8f7f4;
     width: 560px;
-    height: 220px;
     background-image: url(../img/bg-post.svg);
-}
-
-.map-info p {
-    font-size: 14px;
-    line-height: 1.43;
-    font-weight: 400;
-    text-align: left;
-    color: #323232;
-}
-
-.map-info span {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.33;
-    text-align: left;
-    color: #323232;
-}
-
-.map-info a {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.57;
-    text-align: left;
-    color: #323232;
 }
 
 .map-info button {
@@ -398,42 +376,37 @@ h1 {
 }
 
 .sort-button {
-    font-weight: 500;
-    line-height: 1.13;
-    text-align: left;
     color: #ffffff;
-    width: 144px;
-    height: 37px;
-    border: solid 2px #ffffff;
-    background-color: #ffffff;
+    background-color: #a6b7ae;
+    border-radius: 18px;
+    border: 2px solid #ffffff;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.sort-button button:hover,
-.sort-button button:focus {
+.sort-button:hover {
     color: #323232;
-    width: 144px;
-    height: 37px;
-    background-color: #ffffff;
+    background-color: #fbfcfb;
 }
 
-.sort-button button:active {
+.sort-button:active {
     color: #323232;
-    width: 144px;
-    height: 36px;
-    box-shadow: inset 0px 2px 1px 0 #696969;
-    background-color: #ededed;
+    background-color: #eaeaea;
+    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.7);
+    border: none;
 }
 
-.page-number a {
+.page-number-list a {
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.13;
     letter-spacing: normal;
-    text-align: right;
     color: #ffffff;
 }
 
-.page-number a:active {
-    color: #000000;
+.page-number-list a:active {
+    color: #323232;
+    background-color: #ffffff;
 }
 
 html,
@@ -441,12 +414,25 @@ body {
     min-height: 100%;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.site-wrapper {
+    background-color: #849d8f;
+    min-width: 1200px;
+}
+
 .container {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 27px;
-    padding-left: 27px;
+    padding: 0 27px;
+    margin: 0 auto;
 }
 
 .list {
@@ -456,30 +442,68 @@ body {
 }
 
 .main-header {
-    min-height: 113px;
+    position: relative;
+    margin: 0;
+    padding-top: 8px;
+    z-index: 2;
 }
 
 .main-navigation {
-    min-height: 113px;
     display: flex;
 }
 
 .main-header-logo {
-    width: 154px;
-    height: 64px;
+    flex-basis: 154px;
+    flex-shrink: 0;
 }
 
 .site-navigation {
-    margin: 0;
+    display: flex;
+    padding-left: 10px;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.site-navigation a {
+    display: block;
+    vertical-align: top;
+    padding: 4px 14px 8px 14px;
+}
+
+.nav-catalog {
+    display: none;
+    position: absolute;
+    left: 158px;
+    top: 60px;
+    width: 143px;
     padding: 0;
-    list-style: none;
-    min-height: 15px;
-    width: 349px;
 }
 
 .user-navigation {
-    min-height: 15px;
-    width: 245px;
+    padding: 0;
+    display: flex;
+}
+
+.search-link {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.entrance-link {
+    padding: 8px 16px 8px 45px;
+    border-radius: 16px;
+}
+
+.empty {
+    padding: 8px 16px 8px 45px;
+    border-radius: 16px;
+}
+
+.cart-link {
+    padding: 8px 16px 8px 45px;
+    border-radius: 16px;
 }
 
 .workhours {
@@ -496,49 +520,146 @@ body {
     line-height: 17px;
 }
 
-.main-navigation-wrapper {
+.gifts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 1146px;
-    margin-top: 9px;
-    margin-bottom: 20px;
-    min-height: 64px;
-    align-items: baseline;
 }
 
-.main-navigation-wrapper .container {
+.gifts-item {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    min-height: 229px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.gifts-item h3 {
+    margin: 13px 20px 15px 20px;
+}
+
+.gifts-item p {
+    margin: 0px 22px 45px 22px;
+}
+
+.gifts-item .button {
+    margin-right: 20px;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.advantages {
+    margin: 0;
+    padding: 22px 7px 0 7px;
+}
+
+.advantages-heading {
+    margin: 0;
+    padding: 0 14px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    margin-left: -13px;
+    margin-right: -13px;
+    justify-content: space-between;
+}
+
+.advantages-item {
+    flex: 0 0 50%;
+    padding: 13px 0 10px 69px;
+    padding-left: 70px;
+}
+
+.index-columns {
+    margin: 40px 0 37px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.advantages {
-    min-height: 306px;
-    margin-bottom: 40px;
-}
-
-.advantages-list,
-.index-columns,
-.catalog-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    margin-left: -13px;
-    margin-right: -13px;
-}
-
-.advantages-item,
-.column {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding-left: 73px;
-    padding-right: 13px;
-    padding-bottom: 27px;
-}
-
-.index-columns {
-    height: 220px;
+.subscription {
+    width: 560px;
+    height: 222px;
+    border-radius: 15px;
 }
 
 .post {
-    height: 220px;
+    margin: 6px;
+    height: 210px;
+    padding: 27px 16px 27px 20px;
+}
+
+.post .button {
+    margin-left: 10px;
+    padding: 11px 18px;
+}
+
+.address {
+    position: relative;
+    height: 430px;
+    margin-bottom: 18px;
+}
+
+.address-background {
+    position: absolute;
+    top: 0;
+    left: -27px;
+    right: -27px;
+}
+
+.map-info {
+    position: absolute;
+    top: 62px;
+    right: 27px;
+    width: 302px;
+    min-height: 305px;
+    border-radius: 15px;
+    padding: 30px 27px;
+    background-color: #fdfefe;
+    color: #323232;
+    z-index: 3;
+}
+
+.address-1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.address-1 span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.address2 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.address2 span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.address1+.address1 {
+    margin-top: 16px;
+}
+
+.address1+.address2 {
+    margin-top: 8px;
 }
 
 .main-footer {
@@ -595,10 +716,94 @@ body {
 }
 
 .breadcrumbs {
-    list-style: none;
     display: flex;
+    margin: 25px 0 0px 0;
+    padding-left: 0;
+}
+
+.breadcrumbs a {
+    display: block;
+    padding-right: 14px;
+}
+
+.filters {
     margin: 0;
+    margin-bottom: 19px;
+}
+
+.filters form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.filters fieldset {
+    border: none;
     padding: 0;
+    margin: 0;
+}
+
+.filters legend {
+    padding-left: 16px;
+}
+
+.field-container {
+    padding: 0 15px;
+    height: 36px;
+    border-radius: 18px;
+    vertical-align: middle;
+}
+
+.field-sorting {
+    width: 194px;
+}
+
+.filters select {
+    padding: 8px 15px 9px 15px;
+    border: none;
+    width: 194px;
+}
+
+.field-price {
+    width: 219px;
+}
+
+.field-richness {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field-richness label {
+    padding-left: 32px;
+    margin-right: 16px;
+}
+
+.field-richness label:last-child {
+    margin-right: 0
+}
+
+.field-filler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field-filler label {
+    padding-left: 33px;
+    margin-right: 21px;
+}
+
+.field-filler label:last-child {
+    margin-right: 0;
+}
+
+.sort-button {
+    width: 145px;
+    height: 36px;
+    align-self: flex-end;
+    margin-bottom: 13px;
 }
 
 .page-title {
@@ -606,24 +811,90 @@ body {
     padding: 0;
 }
 
-.catalog-list {
-    display: flex;
+.catalog {
     margin: 0;
-    padding: 0;
+}
+
+.catalog-list {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .product-card {
     flex: 0 0 25%;
-    max-width: 25%;
-    padding-left: 13px;
-    padding-right: 13px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 267px;
+    padding: 0 0 15px 0;
+    text-align: center;
+}
+
+.item-hover:hover {
+    left: -13px;
+    top: -6px;
+    width: 293px;
+    padding-top: 8px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.item-hover:hover .quick-look {
+    display: block;
+    border-radius: 5px;
+}
+
+.price {
+    top: 162px;
+    left: 0px;
+}
+
+.quick-look {
+    display: none;
+    left: 0;
+    padding-bottom: 20px;
+    z-index: 2;
+}
+
+.quick-look .button {
+    display: block;
+    vertical-align: top;
+    width: 208px;
+    margin: 0 auto;
+    padding: 11px 18px;
 }
 
 .page-number-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 130px;
-    margin-left: auto;
-    justify-content: space-between;
+    margin: 20px 0 18px 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: right;
+}
+
+.page-number-list li {
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+    padding: 30px 0;
+}
+
+.page-number-list li:last-child {
+    width: 16px;
+}
+
+.page-number-list a {
+    display: block;
+    vertical-align: middle;
+    width: 26px;
+    height: 26px;
+    text-decoration: none;
+    border-radius: 13px;
+}
+
+.page-number-list a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
